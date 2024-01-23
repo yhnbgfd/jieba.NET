@@ -1,19 +1,27 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFrameworks>netstandard2.0;net40;net45</TargetFrameworks>
-    <AssemblyName>JiebaNet.Analyser</AssemblyName>
-    <RootNamespace>JiebaNet.Analyser</RootNamespace>
-    <Version>0.42.2</Version>
-    <Description>JiebaNet.Analyser.</Description>
-    <Company>andersc</Company>
-    <Authors>andersc</Authors>
-    <Copyright>Copyright © andersc 2020</Copyright>
-    <RepositoryUrl>https://github.com/anderscui/jieba.NET/</RepositoryUrl>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFrameworks>netstandard2.0;net40;net45</TargetFrameworks>
+		<AssemblyName>JiebaNet.Analyser</AssemblyName>
+		<RootNamespace>JiebaNet.Analyser</RootNamespace>
+		<Version>0.42.2</Version>
+		<Description>JiebaNet.Analyser.</Description>
+		<Company>andersc</Company>
+		<Authors>andersc</Authors>
+		<Copyright>Copyright © andersc 2020</Copyright>
+		<RepositoryUrl>https://github.com/anderscui/jieba.NET/</RepositoryUrl>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(TargetFramework)' == 'net40'">
+		<SignAssembly>True</SignAssembly>
+		<AssemblyOriginatorKeyFile>JiebaNet.Analyser.snk</AssemblyOriginatorKeyFile>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(TargetFramework)' == 'net45'">
+		<SignAssembly>True</SignAssembly>
+		<AssemblyOriginatorKeyFile>JiebaNet.Analyser.snk</AssemblyOriginatorKeyFile>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\Segmenter\Segmenter.csproj" />
-  </ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\Segmenter\Segmenter.csproj" />
+	</ItemGroup>
 
 </Project>
