@@ -3,13 +3,14 @@
 	<PropertyGroup>
 		<TargetFrameworks>netstandard2.0;net40;net45</TargetFrameworks>
 		<RootNamespace>JiebaNet.Segmenter</RootNamespace>
-		<AssemblyName>JiebaNet.Segmenter</AssemblyName>
+		<AssemblyName>JiebaNet.Segmenter.StrongNamed</AssemblyName>
 		<Version>0.42.2</Version>
-		<Description>JiebaNet.Segmenter.</Description>
+		<Description>JiebaNet.Segmenter.StrongNamed</Description>
 		<Company>andersc</Company>
 		<Authors>andersc</Authors>
 		<Copyright>Copyright © andersc 2020</Copyright>
-		<RepositoryUrl>https://github.com/anderscui/jieba.NET/</RepositoryUrl>
+		<RepositoryUrl>https://github.com/yhnbgfd/jieba.NET</RepositoryUrl>
+		<PackageId>$(AssemblyName)</PackageId>
 	</PropertyGroup>
 	<PropertyGroup Condition="'$(TargetFramework)' == 'net40'">
 		<SignAssembly>True</SignAssembly>

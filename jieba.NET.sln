@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.1000
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34511.84
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Segmenter", "src\Segmenter\Segmenter.csproj", "{17374895-12D9-4890-8199-D317ACE344B3}"
 EndProject
@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Analyser", "src\Analyser\An
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Segmenter.Cli", "src\Segmenter.Cli\Segmenter.Cli.csproj", "{09C342C8-EB7A-48D0-8010-C1C7319E8DDA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Segmenter.Tests", "test\Segmenter.Tests\Segmenter.Tests.csproj", "{28FEC270-C373-48AF-B143-04DF42EE1173}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Segmenter.Tests", "test\Segmenter.Tests\Segmenter.Tests.csproj", "{28FEC270-C373-48AF-B143-04DF42EE1173}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
